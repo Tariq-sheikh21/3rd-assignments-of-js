@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Expressions</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        p {
+            text-align: center;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1: MATH EXPRESSIONS</h2>
+    <script>
+
+        // 1) this is for addition
+        var num1 = 3;
+        var num2 = 5;
+        // Add the two numbers
+        var sum = num1 + num2;
+
+        // Display the result in the browser
+        document.write("<h2> Result:</h2>");
+        document.write("<p>" + num1 + " + " + num2 + " = " + sum + "</p>");
+
+
+        // this is for subtraction
+        var num1 = 8;
+        var num2 = 5;
+        // Add the two numbers
+        var subtr = num1 - num2;
+
+        // Display the result in the browser
+        document.write("<h2>Result:</h2>");
+        document.write("<p>" + num1 + " - " + num2 + " = " + subtr + "</p>");
+
+
+        // this is for Multiplication
+        var num1 = 8;
+        var num2 = 5;
+        // Add the two numbers
+        var multi = num1 * num2;
+
+        // Display the result in the browser
+        document.write("<h2>Result:</h2>");
+        document.write("<p>" + num1 + " * " + num2 + " = " + multi + "</p>");
+
+        // this is for division
+        var num1 = 8;
+        var num2 = 5;
+        // Add the two numbers
+        var division = num1 / num2;
+
+        // Display the result in the browser
+        document.write("<h2>Result:</h2>");
+        document.write("<p>" + num1 + " / " + num2 + " = " + division + "</p>");
+
+
+
+        // this is for modulus
+        var num1 = 8;
+        var num2 = 5;
+
+        // Calculate the modulus
+        var modulusResult = num1 % num2;
+
+        // Display the result in the browser
+        document.write("<h2>Result:</h2>");
+        document.write("<p>" + num1 + " % " + num2 + " = " + modulusResult + "</p>");
+
+
+        // 2) a. Declare a variable.
+        var myVariable;
+
+        // b. Show the value of the variable in your browser.
+        document.write("<h2>2: Value after variable declaration is: " + myVariable + "</h2>");
+
+        // c. Initialize the variable with some number.
+        myVariable = 5;
+
+        // d. Show the value of the variable in your browser.
+        document.write("<p>Initial value: " + myVariable + "</p>");
+
+        // e. Increment the variable.
+        myVariable++;
+
+        // f. Show the value of the variable in your browser.
+        document.write("<p>Value after increment is: " + myVariable + "</p>");
+
+        // g. Add 7 to the variable.
+        myVariable += 7;
+
+        // h. Show the value of the variable in your browser.
+        document.write("<p>Value after addition is: " + myVariable + "</p>");
+
+        // i. Decrement the variable.
+        myVariable--;
+
+        // j. Show the value of the variable in your browser.
+        document.write("<p>Value after decrement is: " + myVariable + "</p>");
+
+        // k. Show the remainder after dividing the variable’s value by 3.
+        var remainder = myVariable % 3;
+
+        // l. Show the remainder in your browser.
+        document.write("<p>The remainder is: " + remainder + "</p>");
+
+
+
+
+        // 3) Write a scripts to store
+
+        // Store ticket price in a variable
+        var ticketPrice = 600;
+
+        // Calculate the cost of buying 5 tickets
+        var totalCost = ticketPrice * 5;
+
+        // Display the result in the browser
+        document.write("<h2>3: Movie Ticket Cost Calculation</h2>");
+
+        document.write("<p>Total cost for 5 tickets: " + totalCost + " PKR</p>");
+
+        // 4) Write a scripts to display multiplication table of 4
+
+        // Define the number for which you want to display the multiplication table
+        var number = 4;
+
+        // Display the multiplication table in the browser
+        document.write("<h2>4: Table of " + number + "</h2>");
+        for (var i = 1; i <= 10; i++) {
+            var result = number * i;
+            document.write("<p>" + number + " x " + i + " = " + result + "</p>");
+        }
+
+
+
+        // 5) Convert it to Celsius & output 
+
+        // a. Store a Celsius temperature into a variable.
+        var celsiusTemperature = 25;
+
+        // b. Convert it to Fahrenheit & output "NN°C is NN°F".
+        var fahrenheitTemperature = (celsiusTemperature * 9 / 5) + 32;
+        document.write("<h2>5: Temperature Converter</h2>");
+        document.write("<p>" + celsiusTemperature + "°C is " + fahrenheitTemperature.toFixed(2) + "°F</p>");
+
+        // c. Store a Fahrenheit temperature into a variable.
+        var fahrenheitTemperature2 = 70;
+
+        // d. Convert it to Celsius & output "NN°F is NN°C".
+        var celsiusTemperature2 = (fahrenheitTemperature2 - 32) * 5 / 9;
+        document.write("<p>" + fahrenheitTemperature2 + "°F is " + celsiusTemperature2.toFixed(2) + "°C</p>");
+
+
+
+
+        // Write a program to implement checkout process of a shopping cart system for an e-commerce website. Store the following in variables
+
+        // Store the following in variables
+        var priceItem1 = 650; // Price of item 1
+        var quantityItem1 = 3; // Ordered quantity of item 1
+
+        var priceItem2 = 100; // Price of item 2
+        var quantityItem2 = 7; // Ordered quantity of item 2
+
+        var shippingCharges = 100; // Shipping charges
+
+        // Compute the total cost
+        var totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+        // Display the receipt in the browser
+        document.write("<h2>6: Shopping Cart Receipt</h2>");
+        document.write("<p>Price of Item 1 is " + priceItem1 + "</p>");
+        document.write("<p>Quantity of Item 1 is " + quantityItem1 + "</p>");
+
+        document.write("<p>Price of Item 2 is " + priceItem2 + "</p>");
+        document.write("<p>Quantity of Item 2 is " + quantityItem2 + "</p>");
+
+        document.write("<p>Shipping Charges: " + shippingCharges + "</p>");
+
+        document.write("<p><strong>Total Cost of Your oreder is " + totalCost + "</strong></p>");
+
+
+        // this is for Marks sheet of total marks and obtained and percentage
+
+        var totalMarks = 980;
+        var obtainedMarks = 804;
+
+        var percentage = obtainedMarks * 100 / totalMarks;
+
+        document.write("<h1>7: Marks Sheet</h1>");
+        document.write("<p>Total Marks: " + totalMarks + "</p>");
+        document.write("<p>Marks Obtained: " + obtainedMarks + "</p>");
+        document.write("<p>Percentage: " + percentage + "</p>");
+
+
+        // This is For currency Changes
+
+        var usDollars = 10;
+        var saudiRiyals = 25;
+
+        // Exchange rates
+        var exchangeRateUSD = 104.80;
+        var exchangeRateSAR = 28;
+
+        // Calculate total currency in PKR
+        var totalCurrencyPKR = (usDollars * exchangeRateUSD) + (saudiRiyals * exchangeRateSAR);
+
+        document.write("<h1>8: Currency in PKR</h1>");
+        document.write("<p>Total Currency in PKR: " + totalCurrencyPKR + "</p>");
+
+
+        //Write a program to initialize a variable with some number and do arithmetic
+
+
+        // Initialize a variable with some number
+        var initialNumber = 7; // You can replace this with any desired number
+
+        // Perform arithmetic operations in a single expression
+        var result = (((initialNumber + 5) * 10) / 2);
+
+        // Display the result
+        document.write("<h1>9: Result: " + result +"</h1>");
+
+
+
+        // The Age Calculator...
+        // Store the current year in a variable
+var currentYear = 2016; // You can replace this with new Date().getFullYear() for the actual current year
+
+// Store their birth year in a variable (replace with the actual birth year)
+var birthYear = 1992;
+
+// Calculate their age based on the stored values
+var age = currentYear - birthYear;
+
+// Display the result
+document.write("<p>Current Year: " + currentYear + "</p>");
+document.write("<p>Birth Year: " + birthYear + "</p>");
+document.write("<p>Your Age Is: " + age + "</p>");
+
+
+//Calculate the circumference based on the radius, and output
+
+var radius = 20; // You can replace this with any desired radius
+
+// Calculate the circumference of the circle
+var circumference = 2 * Math.PI * radius;
+
+// Calculate the area of the circle
+var area = Math.PI * Math.pow(radius, 2);
+
+
+document.write("<h1>10: The Geometrizer</h1>");
+document.write("<p>Radius of a circle: " + radius +"</p>");
+document.write("<p> The circumference is:" + circumference.toFixed(2) +"</p>");
+document.write("<p>The area is: " + area +"</p>");
+
+
+//The Lifetime Supply Calculator
+
+
+// Store your favorite snack into a variable
+var favoriteSnack = "chocolate chip";
+var currentAge = 15; 
+var maximumAge = 65; 
+var amountPerDay = 2; 
+var totalSnacks = (maximumAge - currentAge) * 365 * amountPerDay;
+// Display the result
+document.write("<h1>11: The Life Time Supply Calculator</h1>");
+document.write("<p>Favourite Snack: " + favoriteSnack +"</p>");
+document.write("<p>Current Age: " + currentAge +"</p>");
+document.write("<p> Estimated Maximum" + maximumAge +"</p>")
+document.write("<p> You will need 150 chocolate chip to last until the ripe old age 0f 65" + amountPerDay +"</p>");
+
+
+//Write a program to take a value of a and increament the value 
+
+var a = 10;
+
+// Display the initial value of a
+document.write("<h2>Result:</h2>");
+document.write("<p>The value of a is " + a + "<br></p>");
+
+// Increment and display the value of a (++a)
+document.write("<p>The value of ++a is " + ++a + " <br></p>"); 
+document.write("<p>Now the value of a " + a + " <br></p>"); 
+
+// Increment again and display the value of a (++a)
+document.write("<p>The value of ++a is " + a + " <br></p>"); 
+document.write("<p>Now the value of a " + ++a + " <br></p>"); 
+document.write("<p>Now the value of a " + --a + " <br></p>"); 
+document.write("<p>Now the value of a " + a + " <br></p>"); 
+document.write("<p>Now the value of a " + a + " <br></p>"); 
+document.write("<p>Now the value of a " + --a + " <br></p>"); 
+
+
+//last one math expression
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+document.write("<h2>Last one Math expressions<br></h2>");
+document.write("<p>a is = " + a + "<br></p>");
+document.write("<p>b is = " + b + "<br></p>");
+document.write("<p>Result =" + result + "</p>");
+
+
+    </script>
+
+</body>
+
+</html>
